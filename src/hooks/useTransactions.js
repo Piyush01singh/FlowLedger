@@ -12,7 +12,7 @@ import {
 } from "firebase/firestore";
 import { db, isFirebaseConfigured } from "../firebase";
 
-const LOCAL_PREFIX = "flowledger:transactions:";
+const LOCAL_PREFIX = "velora:transactions:";
 
 const toDateValue = (tx) => {
   if (tx.date) {

@@ -124,7 +124,6 @@ export default function Dashboard({ openAddSignal }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35 }}
       >
-        <span className={`status-pill ${mode}`}>{mode === "firebase" ? "Firestore Live" : "Demo Local"}</span>
         <h1>Your Finance Command Center</h1>
         <p>
           Snapshot balances, filter records, and maintain full control of every transaction from a single

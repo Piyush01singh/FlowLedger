@@ -34,7 +34,7 @@ export default function Profile() {
         <ul className="profile-meta">
           <li>
             <Mail size={15} />
-            <span>{user?.email || "demo@flowledger.app"}</span>
+            <span>{user?.email || "demo@velora.app"}</span>
           </li>
           <li>
             <BadgeCheck size={15} />

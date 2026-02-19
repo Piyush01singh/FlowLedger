@@ -122,16 +122,22 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.8rem;
   text-decoration: none;
   color: inherit;
 }
 
-.brand strong {
+.brand-name {
   font-family: "Sora", sans-serif;
-  font-size: 1.12rem;
-  letter-spacing: 0;
-  display: block;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  background: linear-gradient(120deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 8px 22px color-mix(in srgb, var(--brand) 35%, transparent);
 }
 
 .brand small {
@@ -140,13 +146,15 @@ textarea {
 }
 
 .brand-icon {
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.55rem;
+  height: 2.55rem;
   display: grid;
   place-items: center;
-  border-radius: 0.85rem;
-  background: linear-gradient(135deg, var(--brand-soft), var(--accent-soft));
-  border: 1px solid var(--panel-border);
+  border-radius: 0.95rem;
+  background: linear-gradient(140deg, color-mix(in srgb, var(--brand) 24%, transparent), var(--accent-soft));
+  border: 1px solid color-mix(in srgb, var(--brand) 35%, var(--panel-border));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 22px rgba(12, 20, 29, 0.18);
+  color: var(--brand);
 }
 
 .nav-links {
@@ -270,6 +278,11 @@ textarea {
   letter-spacing: 0;
   line-height: 1.18;
   font-size: clamp(1.6rem, 3vw, 2.3rem);
+  background: linear-gradient(120deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 6px 18px color-mix(in srgb, var(--brand) 24%, transparent);
 }
 
 .dashboard-hero p {

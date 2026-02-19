@@ -7,7 +7,7 @@ const AuthContext = createContext(null);
 const demoUser = {
   uid: "demo-user",
   displayName: "Demo Analyst",
-  email: "demo@flowledger.app",
+  email: "demo@velora.app",
   photoURL: ""
 };
 

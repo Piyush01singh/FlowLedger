@@ -8,7 +8,7 @@ import Profile from "./pages/Profile";
 import { useAuth } from "./context/AuthContext";
 import { isFirebaseConfigured } from "./firebase";
 
-const THEME_KEY = "flowledger-theme";
+const THEME_KEY = "velora-theme";
 
 function App() {
   const navigate = useNavigate();

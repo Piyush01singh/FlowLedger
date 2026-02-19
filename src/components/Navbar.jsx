@@ -1,12 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import {
+  Landmark,
   LayoutDashboard,
   LogOut,
   MoonStar,
   PlusCircle,
   SunMedium,
   UserCircle2,
-  WalletCards
 } from "lucide-react";
 
 function userInitials(name, email) {
@@ -34,12 +34,9 @@ export default function Navbar({
       <div className="topbar-inner">
         <Link to="/dashboard" className="brand">
           <span className="brand-icon">
-            <WalletCards size={18} />
+            <Landmark size={20} />
           </span>
-          <span>
-            <strong>FlowLedger</strong>
-            <small>{isFirebaseMode ? "Live Cloud Sync" : "Demo Local Mode"}</small>
-          </span>
+          <strong className="brand-name">Velora</strong>
         </Link>
 
         <nav className="nav-links">
@@ -66,7 +63,7 @@ export default function Navbar({
             <span className="avatar-fallback">{userInitials(user?.displayName, user?.email)}</span>
             <span className="profile-text">
               <strong>{user?.displayName || "Finance User"}</strong>
-              <small>{user?.email || "demo@flowledger.app"}</small>
+              <small>{user?.email || "demo@velora.app"}</small>
             </span>
           </div>
 

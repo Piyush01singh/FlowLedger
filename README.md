@@ -1,4 +1,4 @@
-# FlowLedger - Personal Finance Tracker
+# Velora - Personal Finance Tracker
 
 Frontend-only fintech dashboard built with React, Firebase Auth/Firestore, and polished motion-driven UI.
 

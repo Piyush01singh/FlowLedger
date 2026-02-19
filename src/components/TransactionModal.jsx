@@ -105,7 +105,7 @@ export default function TransactionModal({
               </label>
 
               <label className="field">
-                <span>Amount (USD)</span>
+                <span>Amount (INR)</span>
                 <input
                   required
                   type="number"
